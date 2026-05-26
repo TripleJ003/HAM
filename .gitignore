@@ -3,8 +3,8 @@ venv/
 .env/
 
 # 输出目录（生成文件）
-txt_output/
-csv_output/
+# txt_output/
+# csv_output/
 
 # 调试脚本
 debug_check.py
