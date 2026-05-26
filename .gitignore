@@ -1,0 +1,23 @@
+# Python 虚拟环境
+venv/
+.env/
+
+# 输出目录（生成文件）
+txt_output/
+csv_output/
+
+# 调试脚本
+debug_check.py
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# 系统文件
+.DS_Store
+Thumbs.db
