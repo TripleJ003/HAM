@@ -154,11 +154,9 @@ def parse_qbank_full(input_file):
             if current_field and current_content:
                 q_data[current_field] = ' '.join(current_content).strip()
             
-            # 清理字段内容中的多余换行和数字标记
+            # 清理字段内容中的多余空白和换行
             for key in ['Q', 'A', 'B', 'C', 'D']:
                 if q_data[key]:
-                    # 移除开头的数字（如 "1\n"、"2\n" 等）
-                    q_data[key] = re.sub(r'^\d+\s*', '', q_data[key])
                     # 合并多余空白
                     q_data[key] = re.sub(r'\s+', ' ', q_data[key]).strip()
             
